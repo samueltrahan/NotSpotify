@@ -1,11 +1,12 @@
 import React from 'react';
+import './NavBar.css';
 
 export default function NavBar() {
   return (
-    <div>
+    <div className="nav-bar">
       <nav>
         <div>
-          <img src="/images/spotify.png" alt="" />
+          <a label="image" href="/"><img className="logo" src="/images/spotify.png" alt="" /></a>
         </div>
       </nav>
     </div>
