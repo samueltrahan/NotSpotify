@@ -6,7 +6,9 @@ export default function NavBar() {
     <div className="nav-bar">
       <nav>
         <div>
-          <a label="image" href="/"><img className="logo" src="/images/spotify.png" alt="" /></a>
+          <a label="image" href="/">
+            <img className="logo" src="/images/spotify.png" alt="" />
+          </a>
         </div>
       </nav>
     </div>
