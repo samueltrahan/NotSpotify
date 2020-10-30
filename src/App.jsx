@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from './components/NavBar';
 import DropDown from './components/DropDown/DropDown';
+import TypeDD from './components/DropDown/TypeDD';
 import './App.css';
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <NavBar />
       <h1 className="title">NotSpotify</h1>
       <DropDown />
+      <TypeDD />
     </>
   );
 }

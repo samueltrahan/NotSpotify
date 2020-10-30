@@ -4,7 +4,7 @@ import './DropDown.css';
 export default function DropDown() {
   return (
     <>
-      <h3 className="genre">Genre</h3>
+      <h3 className="genre">Select Genre</h3>
       <div className="drop-down">
         <div className="drop-down-item">
           <select className="select ui dropdown">
