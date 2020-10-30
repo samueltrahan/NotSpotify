@@ -11,6 +11,11 @@ export default function App() {
       <h1 className="title">NotSpotify</h1>
       <DropDown />
       <TypeDD />
+      <div className="submit-button">
+        <button className=" ui black button" type="submit">
+          Submit
+        </button>
+      </div>
     </>
   );
 }

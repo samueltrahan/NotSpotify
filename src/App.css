@@ -10,3 +10,10 @@ body {
 .select {
   width: 360px;
 }
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
