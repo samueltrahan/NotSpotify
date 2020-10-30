@@ -1,29 +1,27 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
 import './DropDown.css';
 
-export default function DropDown() {
+// eslint-disable-next-line react/prop-types
+export default function DropDown({ options }) {
+  const [selectedValue, setSelectedValue] = useState('');
+
   return (
     <>
       <h3 className="genre">Select Genre</h3>
-      <div className="drop-down">
-        <div className="drop-down-item">
-          <select className="select ui dropdown">
-            <option disabled value="0" placeholder="Genre">
-              Genre
-            </option>
-            <option value="1">Hip-Hop</option>
-            <option value="2">Rap</option>
-            <option value="3">R&B</option>
-            <option value="4">Jazz</option>
-            <option value="5">Rock</option>
-            <option value="6">Electronic Dance Music</option>
-            <option value="7">Soul Music</option>
-            <option value="8">Country</option>
-            <option value="9">Pop</option>
-            <option value="10">LO-FI Beats</option>
-          </select>
-        </div>
-      </div>
+      <select
+        value={selectedValue}
+        // eslint-disable-next-line arrow-parens
+        onChange={e => setSelectedValue(e.target.value)}
+        className="select ui dropdown"
+      >
+        {options.map(item => (
+          <option key={item.id} value={item.value}>
+            {item.name}
+          </option>
+        ))}
+      </select>
+      <h5>{selectedValue}</h5>
     </>
   );
 }
